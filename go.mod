@@ -1,3 +1,3 @@
-module github.com/microsoft/vscode-remote-try-go
+module github.com/simple-webserver.go
 
 go 1.14
