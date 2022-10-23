@@ -1,5 +1,9 @@
 # Try Out Development Containers: Go
 
+DockerコンテナへのVSCodeを用いたリモート接続のテストとGoによる簡易サーバのテストを行うモジュールです。  
+VSCodeの左下の「Open a Remote Window」ボタンをクリックして「Open Folder in Container」をクリックするとDockerコンテナ内にVSCodeを用いてアクセスできます。  
+上記処理を行うためには、「Remote Development(ms-vscode-remote.vscode-remote-extensionpack)」拡張機能が必要です。  
+
 ```bash
 # 実行
 go run src/*.go
