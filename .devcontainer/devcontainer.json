@@ -29,7 +29,10 @@
 			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"golang.Go"
+				"golang.Go",
+				"mhutchie.git-graph",
+				"dbaeumer.vscode-eslint",
+				"DavidAnson.vscode-markdownlint"
 			]
 		}
 	},
