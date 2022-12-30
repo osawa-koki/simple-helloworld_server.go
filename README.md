@@ -25,4 +25,4 @@ docker build -t simple-go-server . && docker run -p 80:80 -it --rm --name my-sim
 - /wwwroot/tako.png
 - /body (ボディ部にデータをセット)
 - /form (フォームデータとクエリ文字列をセット)
-- /post-form (フォームデータとクエリ文字列をセット)
+- /postform (フォームデータとクエリ文字列をセット)
