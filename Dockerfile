@@ -4,6 +4,6 @@ EXPOSE 80
 WORKDIR /app
 
 COPY ./src ./src
-RUN go build -a -x -o main ../src/server.go
+RUN go build -a -x -o main ./src/server.go
 
 CMD ["./main"]
