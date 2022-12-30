@@ -26,3 +26,16 @@ docker build -t simple-go-server . && docker run -p 80:80 -it --rm --name my-sim
 - /body (ボディ部にデータをセット)
 - /form (フォームデータとクエリ文字列をセット)
 - /postform (フォームデータとクエリ文字列をセット)
+
+## デプロイ設定
+
+| キー | バリュー |
+| ---- | ---- |
+| Name | simple-go-server |
+| Region | Oregon(US West) |
+| Branch | main |
+| Root Directory |  |
+| Environment | Docker |
+| Dockerfile Path | ./Dockerfile |
+| Docker Build Context Directory |  |
+| Docker Command |  |
