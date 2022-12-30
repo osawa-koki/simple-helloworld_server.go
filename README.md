@@ -19,7 +19,10 @@ docker build -t simple-go-server . && docker run -p 80:80 -it --rm --name my-sim
 
 - /
 - /greet
-- /query
+- /query?ilove=tako
 - /methods (GET/POST/PUT/DELETE)
 - /contents/tako.png
 - /wwwroot/tako.png
+- /body (ボディ部にデータをセット)
+- /form (フォームデータとクエリ文字列をセット)
+- /post-form (フォームデータとクエリ文字列をセット)

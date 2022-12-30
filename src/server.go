@@ -37,8 +37,29 @@ func main() {
 		}
 	})
 
+	http.HandleFunc("/header", func(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "header -> %s", r.Header)
+	})
+
 	http.HandleFunc("/query", func(w http.ResponseWriter, r *http.Request) {
     fmt.Fprintf(w, "query -> %s", r.URL.RawQuery)
+	})
+
+	http.HandleFunc("/body", func(w http.ResponseWriter, r *http.Request) {
+		len := r.ContentLength
+		body := make([]byte, len)
+		r.Body.Read(body)
+		fmt.Fprintln(w, string(body))
+	})
+
+	http.HandleFunc("/form", func(w http.ResponseWriter, r *http.Request) {
+		r.ParseForm()
+		fmt.Fprintln(w, r.Form)
+	})
+
+	http.HandleFunc("/postform", func(w http.ResponseWriter, r *http.Request) {
+		r.ParseForm()
+		fmt.Fprintln(w, r.PostForm)
 	})
 
 	// 静的ファイル配信
