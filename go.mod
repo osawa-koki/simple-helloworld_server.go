@@ -1,3 +1,3 @@
-module github.com/simple-helloworld_server.go
+module example.com/program
 
 go 1.19
