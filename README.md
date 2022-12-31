@@ -27,7 +27,7 @@ docker build -t simple-go-server . && docker run -p 80:80 -it --rm --name my-sim
 - /form (フォームデータとクエリ文字列をセット)
 - /postform (フォームデータとクエリ文字列をセット)
 
-## デプロイ設定
+## デプロイ設定(Render.com)
 
 | キー | バリュー |
 | ---- | ---- |
