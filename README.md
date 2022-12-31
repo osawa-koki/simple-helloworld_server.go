@@ -31,7 +31,7 @@ docker build -t simple-go-server . && docker run -p 80:80 -it --rm --name my-sim
 
 | キー | バリュー |
 | ---- | ---- |
-| Name | simple-go-server |
+| Name | simple-go-restapi-server |
 | Region | Oregon(US West) |
 | Branch | main |
 | Root Directory |  |
